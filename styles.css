@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: var(--Very-Light-Gray);
+    font-family: 'Poppins', sans-serif;
+    color: var(--Grayish-Blue);
+}
+
+.head {
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.head h1 {
+    color: var(--Very-Dark-Blue);
+    max-width: 400px;
+    font-weight: 200;
+    font-size: 30px;
+}
+
+.head h1 span {
+    font-weight: 600;
+}
+
+.head p {
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 0.5rem;
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.7rem;
+}
+
+.card {
+    border-radius: 0.5rem;
+    box-shadow: 0 12px 20px hsla(212, 86%, 64%, 0.15);
+    padding: 1.5rem;
+}
+
+.card h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--Grayish-Blue);
+    max-width: 260px;
+    margin-bottom: 2rem;
+}
+
+.card figure {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+}
+
+.supervisor {
+    border-top: 4px solid var(--Cyan)
+}
+
+.team-builder {
+    border-top: 4px solid var(--Red)
+}
+
+.karma {
+    border-top: 4px solid var(--Orange)
+}
+
+.calculator {
+    border-top: 4px solid var(--Blue)
+}
+
+
+/* Responsiveness */
+@media screen and (max-width: 576px) {
+
+    .head h1 {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .head p {
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .card h2 {
+        font-size: 15px;
+        margin-bottom: 0.3rem;
+    }
+
+    .card p {
+        font-size: 10px;
+        margin-bottom: 1.5rem;
+    }
+
+    .card figure img {
+        height: 40px;
+        width: 40px;
+    }
+}
